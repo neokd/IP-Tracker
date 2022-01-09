@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" size = "32x32" href="/img/logo.png">
+    <!-- FONT-AWESOME -->
+    <script src="https://kit.fontawesome.com/a1384082cd.js" crossorigin="anonymous"></script>
+    <!-- GOOGLE FONTS  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+    <!-- STYLE  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- LEAFLET CSS  -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <!-- LEAFLET JS  -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <title>IP TRACKER</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-title"><h3>IP Address Tracker</h3></IP></div>
+        <div class="search-bar">
+            <div id="loading"></div>
+            <input type="text" id = "ip-input" placeholder="Search for Any IP or Domain">
+            <button id="search-btn"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="data">
+            <section>
+                <div class="data-title">IP ADDRESS</div>
+                <div id="ipaddress">&nbsp;</div>
+            </section>
+            <section>
+                <div class="data-title">LOCATION</div>
+                <div id="location">&nbsp;</div>
+            </section>
+            <section>
+                <div class="data-title">TIME ZONE</div>
+                <div id="timezone">&nbsp;</div>
+            </section>
+            <section>
+                <div class="data-title">ISP</div>
+                <div id="isp">&nbsp;</div>
+            </section>
+        </div>
+    </div>
+
+    <div id="mapid"></div>
+    <script src="app.js"></script>
+    
+</body>
+</html>
